@@ -74,6 +74,12 @@ def won?(board)
   end
 end
 
+def full?(board)
+  board.none?{|index| index == nil || index == "" || index == " "}
+end
+
+
+
 
 
     
