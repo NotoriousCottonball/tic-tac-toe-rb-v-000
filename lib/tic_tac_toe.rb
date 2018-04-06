@@ -64,7 +64,11 @@ def turn(board)
   end
 end
 
-def
+def current_player(board)
+  turn_count(board).even? ? "X" : "O"
+end
+
+
 
     
   
