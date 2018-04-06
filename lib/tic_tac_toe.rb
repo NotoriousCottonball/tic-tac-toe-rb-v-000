@@ -78,6 +78,18 @@ def full?(board)
   board.none?{|index| index == nil || index == "" || index == " "}
 end
 
+def draw?(board)
+  if !won?(board) && full?(board)
+    true
+  end
+end
+
+def over?(board)
+  if won?(board) || draw?(board)
+    true
+  end
+end
+
 
 
 
