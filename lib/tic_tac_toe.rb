@@ -33,6 +33,21 @@ def valid_move?(board, index)
   if index.between?(0,8) && !position_taken?(board, index)
     true 
   else 
+    false 
+  end
+end
+
+def turn_count(board)
+  turn_counter = 0 
+  board.each do  |index|
+    if index == "X" || index == "Y"
+      turn_counter += 1 
+    end
+  end
+  turn_counter
+end
+
+
 
     
   
