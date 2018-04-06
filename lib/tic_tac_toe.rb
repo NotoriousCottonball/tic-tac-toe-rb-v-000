@@ -47,7 +47,9 @@ def turn_count(board)
   turn_counter
 end
 
-def
+def turn(board)
+  puts "Please enter 1-9:"
+  input = gets.strip
 
     
   
